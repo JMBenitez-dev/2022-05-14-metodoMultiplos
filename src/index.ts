@@ -20,3 +20,4 @@ btnEnv?.addEventListener("click", () => {
   let data2: number = Number(numero2.value);
   esMultiplo(data1, data2);
 });
+//Está muy bien tu solución!
