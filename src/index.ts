@@ -9,7 +9,10 @@ btnEnv?.addEventListener("click", () => {
       salida = true;
       console.log("verdad"); /* solo para pruebas */
       return salida;
-    } else {
+     // el valor que tiene "salida" aca y mas abajo "queda almacenado" en la funcion, asi que va a parar a la linea 21 y como verás no se utiliza
+     // en ningun lado, lo que vos mostras sale por consola en la linea 10 y 14. Asi que pierde todo sentido que uses un return. Y tambien que 
+     //definas a la funcion como boolean
+    } else {        
       salida = false;
       console.log("mentira"); /* solo para pruebas */
       return salida;
@@ -20,3 +23,4 @@ btnEnv?.addEventListener("click", () => {
   let data2: number = Number(numero2.value);
   esMultiplo(data1, data2);
 });
+//Por lo demas esta bien tu solucion
